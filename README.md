@@ -1,3 +1,6 @@
+# Build docker
+docker build -t gansanit/sdn
+
 # Run docker
 docker run -d --name gansansdnui -p 3443:3443 \
     -v /path/to/zerotier_config/:/var/lib/zerotier-one/ \
