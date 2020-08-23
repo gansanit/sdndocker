@@ -29,7 +29,7 @@ RUN \
 
 RUN \
 	mkdir -p /opt/ztncui && chown zerotier-one:zerotier-one /opt/ztncui && \
-	su zerotier-one -c "git clone https://github.com/key-networks/ztncui /opt/ztncui && \
+	su zerotier-one -c "git clone https://github.com/gansanit/oursdnnetwork  /opt/ztncui && \
 		cd /opt/ztncui/src && \
 			mv -v etc/default.passwd ../passwd.orig && \
 			echo 'HTTPS_PORT=3443' >> .env" && \
